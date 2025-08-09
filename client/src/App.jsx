@@ -10,6 +10,7 @@ import MyBookings from './pages/MyBookings'
 import Favourite from './pages/Favourite'
 import {Toaster} from 'react-hot-toast'
 
+
 const App = () => {
 
   const isAdminRoute = useLocation().pathname.startsWith('/admin')
@@ -18,6 +19,7 @@ const App = () => {
     <>
     <Toaster/>
       { !isAdminRoute && <Navbar/>}
+        {/* <Practice/> */}
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/movies' element={<Movies/>}/>
