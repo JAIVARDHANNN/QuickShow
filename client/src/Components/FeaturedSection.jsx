@@ -9,7 +9,7 @@ import { dummyShowsData } from '../assets/assets';
 const FeaturedSection = () => {
      const navigate = useNavigate();
   return (
-    <div className='px-6 md:px-16 lg:px-24 xl:px-44 overflow-hidden'>
+    <div className='py-10 px-6 md:px-26 lg:px-24 xl:px-51 overflow-hidden'>
         <div className='relative flex items-center justify-between pt-20 pb-10' >
             <BlurCircle top='0' right='-80px' />
             <p className='text-gray-300 font-medium text-lg'>Now Showing</p>
@@ -18,7 +18,7 @@ const FeaturedSection = () => {
         </div>
         
         <div className='flex flex-wrap max-sm:justify-center gap-8 mt-8'>
-          {dummyShowsData.slice(0,4).map(()=>(
+          {dummyShowsData.slice(0,6).map((show)=>(
             <MovieCard key={show._id} movie={show} />
           ))}
         </div>
